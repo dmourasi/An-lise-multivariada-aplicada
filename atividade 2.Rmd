@@ -1,0 +1,67 @@
+```{r}
+library(hdrcde)
+x <- c(rnorm(400,0,1))
+y <- c(rnorm(400,0,1))
+hdr.boxplot.2d(x,y)
+
+hdrinfo <- hdr.2d(x,y)
+plot(hdrinfo, pointcol="red", show.points=TRUE, pch=3)
+```
+
+```{r}
+z <- c(rnorm(600,0,1),rnorm(400,4,1))
+n <- c(rnorm(600,0,1),rnorm(400,4,1))
+hdr.boxplot.2d(z,n)
+
+hdrinfo2 <- hdr.2d(z,n)
+plot(hdrinfo2, pointcol="red", show.points=TRUE, pch=3)
+```
+
+```{r}
+p <- c(rnorm(150,0,1),rnorm(80,4,1),rnorm(300,0,1))
+t <- c(rnorm(150,0,1),rnorm(80,4,1),rnorm(300,0,1))
+hdr.boxplot.2d(p,t)
+
+hdrinfo3 <- hdr.2d(p,t)
+plot(hdrinfo3, pointcol="red", show.points=TRUE, pch=3)
+```
+
+
+# Iris
+```{r}
+
+hdr.boxplot.2d(iris$Sepal.Length, iris$Sepal.Length)
+
+hdrinfo4 <- hdr.2d(iris$Sepal.Length, iris$Sepal.Length)
+plot(hdrinfo4, pointcol="red", show.points=TRUE, pch=3)
+
+```
+
+```{r}
+
+hdr.boxplot.2d(iris$Sepal.Length, iris$Petal.Length)
+
+hdrinfo5 <- hdr.2d(iris$Sepal.Length, iris$Sepal.Length)
+plot(hdrinfo5, pointcol="red", show.points=TRUE, pch=3)
+
+```
+
+```{r}
+
+hdr.boxplot.2d(iris$Sepal.Length, iris$Petal.Width)
+
+hdrinfo6 <- hdr.2d(iris$Sepal.Length, iris$Sepal.Length)
+plot(hdrinfo6, pointcol="red", show.points=TRUE, pch=3)
+
+```
+
+```{r}
+
+hdr.boxplot.2d(iris$Sepal.Width, iris$Petal.Width)
+
+hdrinfo7 <- hdr.2d(iris$Sepal.Length, iris$Sepal.Length)
+plot(hdrinfo7, pointcol="red", show.points=TRUE, pch=3)
+
+```
+
+
